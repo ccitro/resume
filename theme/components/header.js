@@ -39,8 +39,8 @@ export default function Header(basics = {}) {
         `}
         ${url && html`
           <li>
-            ${Icon('pdf')}
-            ${Link(url)}
+            ${Icon('file-text')}
+            ${Link(url, "Resume PDF")}
           </li>
         `}
         ${profiles.map(({ network, url, username }) => html`
