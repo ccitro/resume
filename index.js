@@ -12,6 +12,14 @@ const themes = [
     ['resu', themeResu],
 ];
 
+try {
+    await fs.mkdir('./dist');
+} catch (e) {
+    if (e.code !== 'EEXIST') {
+        throw e;
+    }
+}
+
 const files = await fs.readdir('./dist');
 for (const file of files) {
     await fs.unlink(`./dist/${file}`);
