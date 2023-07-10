@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Craig Citro</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Craig Citro
+					</h1>
+					<h2>
+						Developer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">craig@citro.net</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Experienced Software Engineer with a demonstrated history of working in the retail industry. Strong engineering professional skilled in JavaScript, PHP, Kotlin, SQL, and more.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/ccitro/">ccitro</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/craig-citro/">craig-citro</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span></span>
+					<span class="date">
+						2014-06-01 — 
+					</span>
+				</h4>
+				<div class="position">
+					Software Architect
+				</div>
+				<div class="summary">
+					<p>Largest independently-owned, single-location retailer of electronics, appliances, and home goods in the USA.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Improved developer productivity, accountability, and reliability by setting up CI/CD using Gitlab, Docker, and automated testing</li>
+					<li class="bullet">Built out frontend build system supporting React, Typescript, and in house widgets/packages using esbuild</li>
+					<li class="bullet">Designed and developed container systems for local development and per-project QA environments using Docker Swarm, Vue.js, and PHP</li>
+					<li class="bullet">Experimented with and implemented various AI/ML systems, including LLMs to assist with content generation</li>
+					<li class="bullet">Continued with development and maintenance of new software applications and features throughout the company</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span></span>
+					<span class="date">
+						2012-03-10 — 2014-06-01
+					</span>
+				</h4>
+				<div class="position">
+					Senior Software Developer
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Developed an in-house Android application used by Abt&#x27;s delivery and service fleets using Java, Kotlin, SQLite/Room, and Compose</li>
+					<li class="bullet">Built a custom Point of Sale system (POS) used for sales and service using PHP, Typescript, React, and Oracle</li>
+					<li class="bullet">Implemented several payment solutions such as payment gateways, EMV, NFC, PayPal, Affirm, Syncrhony, Bitcoin, and more</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span></span>
+					<span class="date">
+						2008-03-10 — 2012-03-10
+					</span>
+				</h4>
+				<div class="position">
+					Software Developer
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Lead the initiative to bring all prior and future code into source control systems using SVN and eventually git</li>
+					<li class="bullet">Integrated credit card reading devices with point of sale system using C# and JavaScript</li>
+					<li class="bullet">Developed new featured for ecommerce website such as search, filtering, fulfillment, and discounts using PHP and jQuery</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span></span>
+					<span class="date">
+						2004-06-01 — 2008-03-09
+					</span>
+				</h4>
+				<div class="position">
+					Operations Manager
+				</div>
+				<div class="summary">
+					<p>Lead the development of the growing digital imaging division of this leading X-ray service and repair company</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Created a PACS (picture archiving and communication system) using PHP, HTML, Javascript, MySQL and C#</li>
+					<li class="bullet">Designed an inventory management system that interfaced with barcode scanners</li>
+					<li class="bullet">Created a sales lead tracking system</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>University of Illinois at Urbana-Champaign</span>
+					<span class="date">
+						1999-09-15 — 2004-05-15
+					</span>
+				</h4>
+				<div class="area">
+					Computer Engineering
+				</div>
+				<div class="studyType">
+					Bachelor of Science
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="awards" class="row">
+		<aside class="col-sm-3">
+			<h3>Awards</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Employee of the Year</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					2013-12-01
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>Abt Electronics</strong>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Frontend</h4>
+				</div>
+				<ul class="keywords">
+					<li>Typescript</li>
+					<li>Javascript</li>
+					<li>HTML/CSS</li>
+					<li>Tailwind</li>
+					<li>React</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Backend</h4>
+				</div>
+				<ul class="keywords">
+					<li>Node.js</li>
+					<li>Python</li>
+					<li>Go</li>
+					<li>PHP</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Android</h4>
+				</div>
+				<ul class="keywords">
+					<li>Kotlin</li>
+					<li>Java</li>
+					<li>Room</li>
+					<li>Compose</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Database</h4>
+				</div>
+				<ul class="keywords">
+					<li>MySQL</li>
+					<li>SQLite</li>
+					<li>Oracle</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Systems</h4>
+				</div>
+				<ul class="keywords">
+					<li>Nginx</li>
+					<li>Apache</li>
+					<li>Linux</li>
+					<li>Bash</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Tooling</h4>
+				</div>
+				<ul class="keywords">
+					<li>Docker</li>
+					<li>esbuild</li>
+					<li>webpack</li>
+					<li>phpstan</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+
+	</div>
+	
+	</body>
+</html>
