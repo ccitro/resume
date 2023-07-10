@@ -48,8 +48,14 @@ if (pdfHtml !== '') {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.setContent(pdfHtml, { waitUntil: 'networkidle0' });
-    await page.pdf({ path: './dist/resume.pdf', format: 'a4', printBackground: true });
+    await page.pdf({
+        path: './dist/Craig-Citro-Resume.pdf',
+        format: "LETTER",
+        printBackground: true,
+        preferCSSPageSize: true,
+    });
     await browser.close();
+    await fs.copyFile('./dist/Craig-Citro-Resume.pdf', './dist/resume.pdf')
 }
 
 // copy static/input files to dist dir
