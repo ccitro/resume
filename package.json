@@ -28,6 +28,7 @@
     "jsonresume-theme-onepage-plus": "^1.0.1",
     "jsonresume-theme-resu": "^0.0.1",
     "micromark": "^2.11.0",
+    "puppeteer": "^20.8.0",
     "resumed": "^3.0.1",
     "striptags": "^3.2.0"
   },
