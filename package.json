@@ -1,0 +1,37 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "description": "Resume builder for Craig Citro",
+  "keywords": [
+    "resume",
+    "json",
+    "curriculum-vitae",
+    "cv"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccitro/resume"
+  },
+  "license": "MIT",
+  "author": "Craig Citro",
+  "type": "module",
+  "source": "index.js",
+  "scripts": {
+    "build-theme": "vite build",
+    "build-resume": "node index.js",
+    "build": "npm run build-theme && npm run build-resume"
+  },
+  "dependencies": {
+    "feather-icons": "^4.28.0",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-local": "file:./theme",
+    "jsonresume-theme-onepage-plus": "^1.0.1",
+    "jsonresume-theme-resu": "^0.0.1",
+    "micromark": "^2.11.0",
+    "resumed": "^3.0.1",
+    "striptags": "^3.2.0"
+  },
+  "devDependencies": {
+    "vite": "4.0.4"
+  }
+}
