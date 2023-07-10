@@ -1,8 +1,9 @@
-import { promises as fs } from 'fs';
 import * as themeLocal from 'jsonresume-theme-local';
 import * as themeFlat from 'jsonresume-theme-flat';
 import * as themeOnepagePlus from 'jsonresume-theme-onepage-plus';
 import * as themeResu from 'jsonresume-theme-resu';
+import puppeteer from 'puppeteer';
+import { promises as fs } from 'fs';
 import { render } from 'resumed';
 
 const DEFAULT_HTML_THEME = 'local';
