@@ -39,7 +39,7 @@ export default function Header(basics = {}) {
         `}
         ${url && html`
           <li>
-            ${Icon('link')}
+            ${Icon('pdf')}
             ${Link(url)}
           </li>
         `}

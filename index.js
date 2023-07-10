@@ -52,7 +52,12 @@ if (pdfHtml !== '') {
         path: './dist/Craig-Citro-Resume.pdf',
         format: "LETTER",
         printBackground: true,
-        preferCSSPageSize: true,
+        margin: {
+            top: '0.5in',
+            left: '0.5in',
+            right: '0.5in',
+            bottom: '0.5in',
+        },
     });
     await browser.close();
     await fs.copyFile('./dist/Craig-Citro-Resume.pdf', './dist/resume.pdf')

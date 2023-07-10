@@ -17,6 +17,22 @@ export default function Resume(resume, css) {
   return html`<!DOCTYPE html>
     <html lang="en">
       <head>
+        <!-- 
+          Hi! I'm Craig Citro, and this is my resume. Thanks for taking the time to check out the source.
+
+          This resume was buit using the jsonresume schema and the resumed tool. The main template
+          was derived from jsonresume-theme-even, but I've made some changes to suite my needs.
+          Most of this HTML comes from that template, so don't use it as a reference for my coding
+          style, be it good or bad.
+
+          If you're interested, there's a PDF version available at:
+          https://resume.citro.net/Craig-Citro-Resume.pdf
+
+          Or you can check out the Github repo that handles building and publishing the resume:
+          https://github.com/ccitro/resume
+
+          Thanks again!
+        -->
         <meta charset="utf-8">
         ${Meta(resume.basics)}
         <meta name="viewport" content="width=device-width, initial-scale=1">
