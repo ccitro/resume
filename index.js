@@ -31,5 +31,7 @@ for (const theme of themes) {
     await fs.writeFile(`./dist/resume-${theme[0]}.html`, html);
 }
 
-await fs.copyFile('./res/resume.json', './dist/resume.json');
 await fs.copyFile(`./dist/resume-${themes[0][0]}.html`, './dist/index.html');
+for (const file of await fs.readdir('./res')) {
+    await fs.copyFile(`./res/${file}`, `./dist/${file}`);
+}
