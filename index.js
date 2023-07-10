@@ -5,6 +5,8 @@ import * as themeOnepagePlus from 'jsonresume-theme-onepage-plus';
 import * as themeResu from 'jsonresume-theme-resu';
 import { render } from 'resumed';
 
+const DEFAULT_HTML_THEME = 'local';
+const DEFAULT_PDF_THEME = 'onepage-plus';
 const themes = [
     ['local', themeLocal],
     ['flat', themeFlat],
@@ -33,20 +35,21 @@ let pdfHtml = '';
 for (const theme of themes) {
     const html = await render(resume, theme[1]);
     await fs.writeFile(`./dist/resume-${theme[0]}.html`, html);
-    if (theme[0] === 'onepage-plus') {
-        pdfHtml = html
+    if (theme[0] === DEFAULT_PDF_THEME) {
+        pdfHtml = html;
     }
 }
 
-// set the first theme to the default html resume
-await fs.copyFile(`./dist/resume-${themes[0][0]}.html`, './dist/index.html');
+await fs.copyFile(`./dist/resume-${DEFAULT_HTML_THEME}.html`, './dist/index.html');
 
 // render the theme with the best pdf support to pdf
-const browser = await puppeteer.launch()
-const page = await browser.newPage()
-await page.setContent(pdfHtml, { waitUntil: 'networkidle0' })
-await page.pdf({ path: './dist/resume.pdf', format: 'a4', printBackground: true })
-await browser.close()
+if (pdfHtml !== '') {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.setContent(pdfHtml, { waitUntil: 'networkidle0' });
+    await page.pdf({ path: './dist/resume.pdf', format: 'a4', printBackground: true });
+    await browser.close();
+}
 
 // copy static/input files to dist dir
 for (const file of await fs.readdir('./res')) {
