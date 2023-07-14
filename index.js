@@ -45,22 +45,26 @@ await fs.copyFile(`./dist/resume-${DEFAULT_HTML_THEME}.html`, './dist/index.html
 
 // render the theme with the best pdf support to pdf
 if (pdfHtml !== '') {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.setContent(pdfHtml, { waitUntil: 'networkidle0' });
-    await page.pdf({
-        path: './dist/Craig-Citro-Resume.pdf',
-        format: "LETTER",
-        printBackground: true,
-        margin: {
-            top: '0.5in',
-            left: '0.5in',
-            right: '0.5in',
-            bottom: '0.5in',
-        },
-    });
-    await browser.close();
-    await fs.copyFile('./dist/Craig-Citro-Resume.pdf', './dist/resume.pdf')
+    try {
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        await page.setContent(pdfHtml, { waitUntil: 'networkidle0' });
+        await page.pdf({
+            path: './dist/Craig-Citro-Resume.pdf',
+            format: "LETTER",
+            printBackground: true,
+            margin: {
+                top: '0.5in',
+                left: '0.5in',
+                right: '0.5in',
+                bottom: '0.5in',
+            },
+        });
+        await browser.close();
+        await fs.copyFile('./dist/Craig-Citro-Resume.pdf', './dist/resume.pdf')
+    } catch (e) {
+        console.error('Error generating PDF:', e);
+    }
 }
 
 // copy static/input files to dist dir
