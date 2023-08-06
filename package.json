@@ -17,19 +17,21 @@
   "type": "module",
   "source": "index.js",
   "scripts": {
-    "build-theme": "vite build",
+    "build-theme-web": "vite build",
     "build-resume": "node index.js",
-    "build": "npm run build-theme && npm run build-resume"
+    "build": "npm run build-theme-web && npm run build-resume"
   },
   "dependencies": {
     "feather-icons": "^4.28.0",
     "jsonresume-theme-flat": "^0.3.7",
-    "jsonresume-theme-local": "file:./theme",
+    "jsonresume-theme-localweb": "file:./theme-localweb",
+    "jsonresume-theme-localpdf": "file:./theme-localpdf",
     "jsonresume-theme-onepage-plus": "^1.0.1",
     "jsonresume-theme-resu": "^0.0.1",
     "micromark": "^2.11.0",
     "puppeteer": "^20.8.0",
     "resumed": "^3.0.1",
+    "handlebars": "^2.0.0-alpha.4",
     "striptags": "^3.2.0"
   },
   "devDependencies": {

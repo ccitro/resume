@@ -1,17 +1,17 @@
-import * as themeLocal from 'jsonresume-theme-local';
+import * as themeLocalWeb from 'jsonresume-theme-localweb';
+import * as themeLocalPdf from 'jsonresume-theme-localpdf';
 import * as themeFlat from 'jsonresume-theme-flat';
-import * as themeOnepagePlus from 'jsonresume-theme-onepage-plus';
 import * as themeResu from 'jsonresume-theme-resu';
 import puppeteer from 'puppeteer';
 import { promises as fs } from 'fs';
 import { render } from 'resumed';
 
-const DEFAULT_HTML_THEME = 'local';
-const DEFAULT_PDF_THEME = 'onepage-plus';
+const DEFAULT_HTML_THEME = 'localweb';
+const DEFAULT_PDF_THEME = 'localpdf';
 const themes = [
-    ['local', themeLocal],
+    ['localweb', themeLocalWeb],
+    ['localpdf', themeLocalPdf],
     ['flat', themeFlat],
-    ['onepage-plus', themeOnepagePlus],
     ['resu', themeResu],
 ];
 
