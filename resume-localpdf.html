@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Craig Citro</title>
+
+	<style>
+	body {
+    background: #EEEEEE;
+    font: 13px "Times New Roman", Times, sans-serif;
+    line-height: 1.4;
+    margin: 40px 0;
+}
+
+em {
+    color: #999;
+}
+
+p {
+    line-height: 1.4;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 80px 100px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px #aaa;
+    -webkit-box-shadow: 2px 2px 4px #aaa;
+}
+
+.coursesList {
+    width: 28%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.largeFont {
+    font-size: 20px;
+}
+
+.smallFont {
+    font-size: 13px;
+}
+
+.sectionBlock {
+    display: flex;
+    width: 100%;
+}
+
+.sectionName {
+    width: 18%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sectionContent {
+    width: 80%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.sectionContent ul {
+    padding-left: 20px;
+    margin-top: 6px;
+    list-style-type: circle;
+}
+
+.sectionContent .title {
+    font-weight: bold;
+}
+
+.sectionContent .date {
+    float: right;
+}
+
+.sectionContent .separator {
+    height: 14px;
+}
+
+.sectionLine {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #CFCFCF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.summary {
+    margin-top: 6px;
+}
+
+.skillBlock {
+    margin-bottom: 4px;
+}
+
+.jobBlock {
+    page-break-inside: avoid;
+}
+
+.description {
+    text-align: justify;
+}
+
+blockquote.reference {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 40em) {
+    body {
+        margin: 0;
+        font-size: 14px;
+    }
+    #resume {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0.5em 1em;
+        border: none;
+    }
+    .sectionBlock {
+        flex-direction: column;
+    }
+    .sectionContent {
+        width: 100%;
+    }
+    .sectionContent .date {
+        padding-right: 2em;
+    }
+    .sectionName {
+        width: auto;
+    }
+    .largeFont {
+        font-size: 20px;
+    }
+    .smallFont {
+        font-size: 14px;
+    }
+}
+
+@media print {
+    body {
+        background: #FFFFFF;
+    }
+    #resume {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0px 0px;
+        border: 0px;
+        background: #fff;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+    a {
+        color: black;
+    }
+}
+	</style>
+	
+	</head>
+	<body>
+	
+	<div id="resume">
+		<div id='nameBlock' class='largeFont'>
+			<span class='name'>
+				Craig Citro,
+			</span>
+			<span class='label'>Developer</span>
+		</div>
+		<div id='basicsBlock' class='smallFont'>
+			<div class='contactBlock'>
+				<span class='email'>craig@citro.net</span>
+				<span class='divider'>|</span>
+				<span class='address'>
+					Buffalo Grove, Illinois, US
+				</span>
+			</div>
+			<div id='profilesBlock'>
+				<span class='url'>
+					<b>Github:</b> <a href='https://github.com/ccitro/'>https://github.com/ccitro/</a>
+				</span>
+				<span class='divider'>|</span>
+				<span class='url'>
+					<b>LinkedIn:</b> <a href='https://www.linkedin.com/in/craig-citro/'>https://www.linkedin.com/in/craig-citro/</a>
+				</span>
+				
+			</div>
+		</div>
+		
+		<div class='sectionLine'></div>
+		<div id='summaryBlock' class="sectionBlock">
+			<div class='sectionName'>
+				<span>SUMMARY</span>
+			</div>
+			<div class='sectionContent'>
+				<span>Experienced Software Engineer with a demonstrated history of working in the retail industry. Strong engineering professional skilled in TypeScript, PHP, Kotlin, and more.</span>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='education' class="sectionBlock">
+			<div class='sectionName'>
+				<span>EDUCATION</span>
+			</div>
+			<div class='sectionContent'>
+				<div class='educationBlock'>
+					<span class='title'>
+						University of Illinois at Urbana-Champaign
+					</span>
+					<span class='date'>
+						2004
+					</span>
+					<div class=''>
+						Bachelor of Science  - Computer Engineering
+					</div>
+				
+				</div>
+				
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='skills' class="sectionBlock">
+			<div class='sectionName'>
+				<span>SKILLS</span>
+			</div>
+			<div class='sectionContent'>
+				<div class='skillBlock'>
+					<span class='title'>Frontend:</span>
+					<span>Typescript</span>, 
+					<span>Javascript</span>, 
+					<span>HTML/CSS</span>, 
+					<span>Tailwind</span>, 
+					<span>React</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Backend:</span>
+					<span>Node.js</span>, 
+					<span>Python</span>, 
+					<span>Go</span>, 
+					<span>PHP</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Android:</span>
+					<span>Kotlin</span>, 
+					<span>Java</span>, 
+					<span>Room</span>, 
+					<span>Compose</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Database:</span>
+					<span>MySQL</span>, 
+					<span>SQLite</span>, 
+					<span>Oracle</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Systems:</span>
+					<span>Nginx</span>, 
+					<span>Apache</span>, 
+					<span>Linux</span>, 
+					<span>Bash</span>
+				</div>
+				<div class='skillBlock'>
+					<span class='title'>Tooling:</span>
+					<span>Docker</span>, 
+					<span>esbuild</span>, 
+					<span>phpstan</span>
+				</div>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='workBlock' class="sectionBlock">
+			<div class='sectionName'>
+				<span>EXPERIENCE</span>
+			</div>
+			<div class='sectionContent'>
+				<div class="jobBlock">
+					<div class='blockHeader'>
+						<span class='title'>Abt Electronics</span>
+						 | <span class="position">Software Architect</span>
+						<span class='date'>
+							2014 &mdash; Present
+						</span>
+					</div>
+					<div><a href='https://www.abt.com'>https://www.abt.com</a></div>
+					<div class="summary">
+						<p>Largest independently-owned, single-location retailer of electronics, appliances, and home goods in the USA.</p>
+					</div>
+					<ul class='highlights'>
+						<li>Improved developer productivity, accountability, and reliability by setting up CI/CD using Gitlab, Docker, and automated testing</li>
+						<li>Built out frontend build system supporting React, Typescript, and in house widgets/packages using esbuild</li>
+						<li>Designed and developed container systems for local development and per-project QA environments using Docker Swarm, Vue.js, and PHP</li>
+						<li>Experimented with and implemented various AI/ML systems, including LLMs to assist with content generation</li>
+						<li>Continued with development and maintenance of new software applications and features throughout the company</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="jobBlock">
+					<div class='blockHeader'>
+						<span class='title'>Abt Electronics</span>
+						 | <span class="position">Senior Software Developer</span>
+						<span class='date'>
+							2012 &mdash; 2014
+						</span>
+					</div>
+					<div><a href=''></a></div>
+					<ul class='highlights'>
+						<li>Developed an in-house Android application used by Abt&#x27;s delivery and service fleets using Java, Kotlin, SQLite/Room, and Compose</li>
+						<li>Built a custom Point of Sale system (POS) used for sales and service using PHP, Typescript, React, and Oracle</li>
+						<li>Implemented several payment solutions such as payment gateways, EMV, NFC, PayPal, Affirm, Syncrhony, Bitcoin, and more</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="jobBlock">
+					<div class='blockHeader'>
+						<span class='title'>Abt Electronics</span>
+						 | <span class="position">Software Developer</span>
+						<span class='date'>
+							2008 &mdash; 2012
+						</span>
+					</div>
+					<div><a href=''></a></div>
+					<ul class='highlights'>
+						<li>Lead the initiative to bring all prior and future code into source control systems using SVN and eventually git</li>
+						<li>Integrated credit card reading devices with point of sale system using C# and JavaScript</li>
+						<li>Developed new featured for ecommerce website such as search, filtering, fulfillment, and discounts using PHP and jQuery</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="jobBlock">
+					<div class='blockHeader'>
+						<span class='title'>L&amp;L X-Ray Service</span>
+						 | <span class="position">Operations Manager</span>
+						<span class='date'>
+							2004 &mdash; 2008
+						</span>
+					</div>
+					<div><a href=''></a></div>
+					<div class="summary">
+						<p>Lead the development of the growing digital imaging division of this leading X-ray service and repair company</p>
+					</div>
+					<ul class='highlights'>
+						<li>Created a PACS (picture archiving and communication system) using PHP, HTML, Javascript, MySQL and C#</li>
+						<li>Designed an inventory management system that interfaced with barcode scanners</li>
+						<li>Created a sales lead tracking system</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='projectsBlock' class="sectionBlock">
+			<div class='sectionName'>
+				<span>PROJECTS</span>
+			</div>
+			<div class='sectionContent'>
+				<div class="projectBlock">
+					<div class='blockHeader'>
+						<span class='title'>
+							Abt Point of Sale
+						</span>
+						
+						
+					</div>
+					<div><a href=''></a></div>
+					<ul class='highlights'>
+						<li>Written using PHP, Typescript, and Oracle, including some React components</li>
+						<li>Implemented a variety of payment methods, including handling account data in a PCI compatible way using end to end encryption and tokenization</li>
+						<li>Handled the scheduling of deliveries and service, including fulfillment integrations, routing systems, and inventory calculations</li>
+						<li>Developed flexible and evolving solutions for regulations that differ by market such as taxes, fees, disclosures, and more</li>
+						<li>Ensured accurate salesperson usage by offering dynamic rules-based suggestions, and tracking and reporting on various metrics</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="projectBlock">
+					<div class='blockHeader'>
+						<span class='title'>
+							Abt Fleet App
+						</span>
+						
+						
+					</div>
+					<div><a href=''></a></div>
+					<ul class='highlights'>
+						<li>Android app written using Kotlin and Compose; backend written in PHP and MySQL</li>
+						<li>Replaced a the costly and time consuming system of printing tickets for every stop</li>
+						<li>Allowed drivers to visualize their routes in both list an map styles, and record their progress throughout the day</li>
+						<li>Tracked the driver&#x27;s location throughout by logging over 500 million GPS updates, and created map visualization tools for customer service and managers</li>
+						<li>Improved the information available about Abt deliveries by capturing over 14 million photos, and additional data such as waivers, and digital notes and signatures</li>
+					</ul>
+					<div class='separator'></div>
+				</div>
+				<div class="projectBlock">
+					<div class='blockHeader'>
+						<span class='title'>
+							Performance Management Application
+						</span>
+						
+						
+					</div>
+					<div><a href=''></a></div>
+					<ul class='highlights'>
+						<li>Written using PHP, Javascript, and Oracle</li>
+						<li>Replaced a paper system, which reduced costs and improved efficiency while also providing an audit trail</li>
+						<li>Increased the information available to department managers by providing reporting of their team&#x27;s performance</li>
+						<li>Improved employee visiblity, letting them their performance and bonuses directly</li>
+						<li>Allowed automating repeated entries, reducing the time spent on data entry</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class='sectionLine'></div>
+		<div id='awards' class="sectionBlock">
+			<div class='sectionName'>
+				<span>AWARDS</span>
+			</div>
+			<div class='sectionContent'>
+				<div class='blockHeader'>
+					<span class='title'>
+						Employee of the Year
+					</span>
+					<span class='date'>
+						<span class='date'>Dec 2013</span>
+					</span>
+				</div>
+					<div class="awarder">Abt Electronics</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
