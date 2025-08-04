@@ -6,10 +6,10 @@
     "image": "",
     "email": "craig@citro.net",
     "url": "https://resume.citro.net/Craig-Citro-Resume.pdf",
-    "summary": "Experienced Software Engineer with a demonstrated history of working in the retail industry. Strong engineering professional skilled in TypeScript, PHP, Kotlin, and more.",
+    "summary": "Software Architect with 18+ years building enterprise systems at scale. Expert in full-stack development, from mobile apps to distributed backend services. Passionate about software and eager to learn, grow, and embrace new challenges and technologies.",
     "location": {
-      "postalCode": "IL 60089",
-      "city": "Buffalo Grove",
+      "postalCode": "IL 60047",
+      "city": "Hawthorn Woods",
       "countryCode": "US",
       "region": "Illinois"
     },
@@ -36,11 +36,13 @@
       "startDate": "2014-06-01",
       "summary": "Largest independently-owned, single-location retailer of electronics, appliances, and home goods in the USA.",
       "highlights": [
-        "Improved developer productivity, accountability, and reliability by setting up CI/CD using Gitlab, Docker, and automated testing",
-        "Built out frontend build system supporting React, Typescript, and in house widgets/packages using esbuild",
-        "Designed and developed container systems for local development and per-project QA environments using Docker Swarm, Vue.js, and PHP",
-        "Experimented with and implemented various AI/ML systems, including LLMs to assist with content generation",
-        "Continued with development and maintenance of new software applications and features throughout the company"
+        "Pioneered AI/ML Service Analysis system using frontier LLMs, reducing diagnostic time and processing 100,000+ service tickets with automated troubleshooting and part ordering",
+        "Led continual development of Android fleet application through 350+ releases, integrating Stripe payment processing and real-time GPS tracking for 6M+ deliveries, reducing paper usage by 95%",
+        "Implemented 10+ payment integrations (Stripe, Affirm, FreedomPay, finance, and more) processing billions of dollars in transactions with PCI-compliant tokenization and fraud detection",
+        "Migrated critical systems from MySQL to MariaDB with Redis clustering, improving query performance by 40% and supporting increased daily transactions",
+        "Developed AI-powered content generation tools for SEO optimization and product descriptions, generating 10,000+ unique product descriptions and improving organic search",
+        "Built real-time vendor API integrations with Whirlpool, GE, Samsung, and 7+ other manufacturers, automating inventory management for 100,000+ SKUs",
+        "Architected and deployed Orchestrate, a comprehensive Docker orchestration platform with GitLab CI/CD integration, improving developer productvity with on-demand dev/qa environments"
       ]
     },
     {
@@ -64,7 +66,7 @@
       "startDate": "2008-03-10",
       "endDate": "2012-03-10",
       "highlights": [
-        "Lead the initiative to bring all prior and future code into source control systems using SVN and eventually git",
+        "Led migration of years of legacy code to Git version control, establishing branching strategies and deployment processes adopted by 20+ developers",
         "Integrated credit card reading devices with point of sale system using C# and JavaScript",
         "Developed new featured for ecommerce website such as search, filtering, fulfillment, and discounts using PHP and jQuery"
       ]
@@ -102,74 +104,77 @@
   ],
   "skills": [
     {
+      "name": "AI/ML",
+      "keywords": ["OpenAI", "LLM", "Real-time Streaming"]
+    },
+    {
       "name": "Frontend",
       "keywords": [
-        "Typescript",
-        "Javascript",
-        "HTML/CSS",
-        "Tailwind",
-        "React"
+        "TypeScript",
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Svelte",
+        "HTML5/CSS3"
       ]
     },
     {
       "name": "Backend",
-      "keywords": [
-        "Node.js",
-        "Python",
-        "Go",
-        "PHP"
-      ]
+      "keywords": ["Node.js", "PHP", "Python", "Go", "C#"]
     },
     {
-      "name": "Android",
-      "keywords": [
-        "Kotlin",
-        "Java",
-        "Room",
-        "Compose"
-      ]
+      "name": "Mobile Development",
+      "keywords": ["Android", "Kotlin", "Jetpack Compose"]
     },
     {
-      "name": "Database",
-      "keywords": [
-        "MySQL",
-        "SQLite",
-        "Oracle"
-      ]
+      "name": "Database & Infrastructure",
+      "keywords": ["MariaDB", "MySQL", "Redis/Valkey", "Oracle", "SQLite"]
     },
     {
-      "name": "Systems",
+      "name": "DevOps & Cloud",
       "keywords": [
+        "Docker/Docker Swarm",
+        "GitLab CI/CD",
         "Nginx",
-        "Apache",
         "Linux",
-        "Bash"
+        "SSL/TLS"
       ]
     },
     {
-      "name": "Tooling",
+      "name": "Payment Systems",
       "keywords": [
-        "Docker",
-        "esbuild",
-        "phpstan"
+        "Stripe",
+        "PCI Compliance",
+        "EMV/NFC",
+        "Payment Tokenization",
+        "Fraud Detection"
       ]
     }
   ],
   "projects": [
     {
-      "name": "Abt Point of Sale",
-      "summary": "Point of sale application used for over 9 million sales for the largest single-store appliance and electronics store in the USA",
+      "name": "AI-Powered Service Analysis Platform",
+      "summary": "Enterprise service diagnostic system using OpenAI GPT models to analyze service tickets and recommend solutions",
       "highlights": [
-        "Written using PHP, Typescript, and Oracle, including some React components",
-        "Implemented a variety of payment methods, including handling account data in a PCI compatible way using end to end encryption and tokenization",
-        "Handled the scheduling of deliveries and service, including fulfillment integrations, routing systems, and inventory calculations",
-        "Developed flexible and evolving solutions for regulations that differ by market such as taxes, fees, disclosures, and more",
-        "Ensured accurate salesperson usage by offering dynamic rules-based suggestions, and tracking and reporting on various metrics"
+        "Integrated fronteir LLMs with custom prompts achieving improved accuracy and efficiency in problem diagnosis",
+        "Built real-time streaming architecture delivering AI responses with Server-Sent Events",
+        "Processed 100,000+ service tickets, reducing average diagnostic time from 15 minutes to seconds",
+        "Implemented intelligent caching layer reducing API costs while maintaining response quality"
       ]
     },
     {
-      "name": "Abt Fleet App",
-      "summary": "Internal Android application used to coordinate over 6 million delivery and service calls, and communicate with external employees during routes",
+      "name": "Orchestrate - Container Orchestration Platform",
+      "summary": "Full-stack TypeScript platform for Docker container orchestration with GitLab integration and automated deployment",
+      "highlights": [
+        "Architected using Node.js/Bun backend and React frontend with real-time WebSocket updates",
+        "Automated SSL certificate management with Let's Encrypt integration and auto-renewal",
+        "Built workspace-based architecture supporting multiple services across dev/staging/production",
+        "Integrated GitLab API for seamless CI/CD pipeline management and source control"
+      ]
+    },
+    {
+      "name": "Abt Fleet Android Application",
+      "summary": "Enterprise Android app coordinating 6M+ deliveries and service calls for 200+ field employees",
       "highlights": [
         "Android app written using Kotlin and Compose; backend written in PHP and MySQL",
         "Replaced a the costly and time consuming system of printing tickets for every stop",
@@ -179,20 +184,20 @@
       ]
     },
     {
-      "name": "Performance Management Application",
-      "summary": "Admin application used to track employee performance and issue over 2 million bonuses, deductions, and notices",
+      "name": "Enterprise Point of Sale System",
+      "summary": "Mission-critical POS processing millions of transactions for the largest single-store retailer in the USA",
       "highlights": [
-        "Written using PHP, Javascript, and Oracle",
-        "Replaced a paper system, which reduced costs and improved efficiency while also providing an audit trail",
-        "Increased the information available to department managers by providing reporting of their team's performance",
-        "Improved employee visiblity, letting them their performance and bonuses directly",
-        "Allowed automating repeated entries, reducing the time spent on data entry"
+        "Built with TypeScript, React, and PHP backend, handling $500M+ in annual sales",
+        "Integrated 15+ payment methods including EMV, NFC, Affirm, Synchrony with PCI compliance",
+        "Achieved sub-second response times during peak holiday traffic (1000+ transactions/hour)",
+        "Created intelligent product recommendation engine increasing average order value"
       ]
     }
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2023-07-02T20:01:00"
+    "version": "v1.1.0",
+    "lastModified": "2025-08-04T12:00:00"
   }
 }
+
