@@ -46,7 +46,10 @@ await fs.copyFile(`./dist/resume-${DEFAULT_HTML_THEME}.html`, './dist/index.html
 // render the theme with the best pdf support to pdf
 if (pdfHtml !== '') {
     try {
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({
+            headless: 'new',
+            args: ['--no-sandbox'],
+        });
         const page = await browser.newPage();
         await page.setContent(pdfHtml, { waitUntil: 'networkidle0' });
         await page.pdf({
